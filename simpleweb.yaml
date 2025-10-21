@@ -2,21 +2,21 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: “simpleweb”
-  name: “simpleweb”
+    app: simpleweb
+  name: simpleweb
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: “simpleweb”
+      app: simpleweb
   strategy: {}
   template:
     metadata:
       labels:
-        app: “simpleweb”
+        app: simpleweb
     spec:
       containers:
-      - image: ”webphp:1.0”
-        name: ”webphp
+      - image: webphp:1.0
+        name: webphp
         resources: {}
 status: {}
